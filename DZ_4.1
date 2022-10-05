@@ -1,0 +1,90 @@
+// DZ 4.1
+// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
+
+// [345, 897, 568, 234] -> 2
+
+
+// int[] RandArr(int min, int max, int Arrlength)
+// {
+//     int[] arr = new int[Arrlength];
+//     for (int i = 0; i<Arrlength; i++)
+//     {
+//         arr[i] = new Random().Next(min, max);
+//     }
+//     return arr;
+// }
+// int[] arr = RandArr(100,999,15);
+
+
+// int SumPositivNumber = 0;
+
+// for (int i = 0; i< arr.Length; i++)
+//     {
+//     if (arr[i]%2==0) SumPositivNumber += arr[i];
+//         Console.Write($"{arr[i]}, "); 
+//     }
+// Console.WriteLine($" Cумма чётных чисел массива = {SumPositivNumber}");
+
+// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
+
+// [3, 7, 23, 12] -> 19
+
+// [-4, -6, 89, 6] -> 0
+
+// int[] RandArr(int min, int max, int Arrlength)
+// {
+//     int[] arr = new int[Arrlength];
+//     for (int i = 0; i<Arrlength; i++)
+//     {
+//         arr[i] = new Random().Next(min, max);
+//     }
+//     return arr;
+// }
+// int[] arr = RandArr(-15, 24 , 3);
+
+
+// int SumOdNum = 0;
+
+// for (int i = 0; i< arr.Length; i++)
+//     {
+//     if (i%2!=0) SumOdNum += arr[i];
+//     Console.Write($"{arr[i]}, "); 
+//     }
+
+// Console.WriteLine($" -> {SumOdNum}");
+
+
+
+
+// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+
+// [3 7 22 2 78] -> 76
+
+// double[] RandArr(double min, double max, int Arrlength)
+// {
+//     double[] arr = new double[Arrlength];
+//     for (int i = 0; i<Arrlength; i++)
+//     {
+//         arr[i] = new Random().NextDouble()*100;
+//     }
+//     return arr;
+// }
+// double[] arr = RandArr(-15, 24 , 3);
+// double max = arr[0];
+// double min = arr[0];
+
+// for (int i = 0; i< arr.Length; i++)
+// {
+//     if(arr[i]>max)
+//     {
+//         max = arr[i];
+//     }
+//     if(arr[i]<min)
+//         {
+//            min = arr[i];
+//         } 
+
+    
+//     Console.Write($"{Math.Round((arr[i]), 2)} ,");
+// }
+// Console.WriteLine($" Макс. число = {Math.Round((max), 2)} - Мин. число = {Math.Round((min), 2)} = Разница между макс. и мин. числом = {Math.Round((max-min), 2)}");
